@@ -1,7 +1,7 @@
 <!-- # Autessa Documentation {docsify-ignore-all} -->
 
-<div style="margin:auto;width:50%;padding:10px">
-    <img src="logo/autessa-logo.png" alt="drawing" width="500"/>
+<div class="embimage">
+    <img src="logo/autessa-logo.png"/>
 </div>
 
 # Documentation
