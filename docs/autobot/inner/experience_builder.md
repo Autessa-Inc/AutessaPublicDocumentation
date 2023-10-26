@@ -19,7 +19,7 @@ See [FAQs](#faqs) for more information on how to handle updated models.
 ### List Response
 
 ### Generative AI Response
-AutessaAI is trained on top of the Llama-2 70B model.
+AutessaLLM is trained on top of the Llama-2 70B model.
 
 ### AutessaScript Response
 For more information on how to use AutessaScript in your bot, check out [AutessaScript](autobot/inner/autessa_script.md)

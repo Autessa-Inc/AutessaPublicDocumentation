@@ -9,18 +9,82 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  
+
   <style>
     .embimage {
-      margin:auto;
+      margin: auto;
       width: 50%;
-      padding:10px;
+      padding: 10px;
+      text-align: center;
     }
+
+    .button {
+      display: block;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 14px;
+      font-family: var(--base-font-family);
+      padding: 5px;
+      margin: auto;
+      transition: all 0.3s ease;
+      background-color: #d2e4ec;
+      text-decoration: none;
+      color: var(--mono-shade2);
+    }
+
+    .button:hover {
+      background-color: #85B7D5;
+      color: #fafafa;
+      text-decoration: none;
+    }
+
+    .icon-bar a {
+      display: block;
+      border-radius: 25px;
+      text-align: center;
+      padding: 20px;
+      margin: auto;
+      width: 30%;
+      transition: all 0.3s ease;
+      background-color: #d2e4ec;
+      font-size: 20px;
+      text-decoration: none;
+      color: var(--mono-shade2);
+    }
+
+    .icon-bar a:hover {
+      background-color: #85B7D5;
+      color: #fafafa;
+      text-decoration: none;
+    }
+
+    .pillar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 2rem;
+      margin: 5px;
+      width: 200px;
+      min-width: 150px;
+      text-align: center;
+      border-radius: 25px;
+    }
+
+    .pillar a {
+      text-decoration: none;
+    }
+
     :root {
       --theme-color: #85B7D5;
       --sidebar-padding: 0.5em 1.5em;
+      --sidebar-width : 22em;
       --content-max-width: 75em;
-    };
+    }
+
   </style>
 </head>
 
@@ -40,20 +104,20 @@
         hideOtherSidebarContent: true,
       },
       pagination: {
-          previousText: "Previous",
-          nextText: "Next",
-          crossChapter: true,
-          crossChapterText: true,
-        },
+        previousText: "Previous",
+        nextText: "Next",
+        crossChapter: true,
+        crossChapterText: true,
+      },
       autoFooter: {
-          name: "Autessa", // company display name (required)
-          copyYear: 2023, // start copyright year (required)
-          url: "https://autessa.com", // company url (optional)
-          policy: false, // show Privacy Policy (optional)
-          terms: false, // show Terms of Service (optional)
-          cookies: false, // show Cookies Policy (optional)
-          onBody: false, // if true it is on the main doc
-        },
+        name: "Autessa", // company display name (required)
+        copyYear: 2023, // start copyright year (required)
+        url: "https://autessa.com", // company url (optional)
+        policy: false, // show Privacy Policy (optional)
+        terms: false, // show Terms of Service (optional)
+        cookies: false, // show Cookies Policy (optional)
+        onBody: false, // if true it is on the main doc
+      },
     }
   </script>
   <!-- Docsify v4 -->
@@ -71,6 +135,18 @@
   <!-- Last Updated 
   <script src="https://cdn.jsdelivr.net/npm/docsify-updated@1/src/time-updater.min.js"></script> -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!--Used in intent_model.md-->
+  <script>
+    function convertToCamelCase(inputString) {
+      return inputString.replace(/(\s|-|_)[a-z]/g, (match) => match.charAt(1).toUpperCase());
+    }
+    function updateOutput(input) {
+        const inputString = document.getElementById('inputString').value;
+        const output = convertToCamelCase(inputString);
+        console.log(output)
+        document.getElementById('output').textContent = output;
+    }
+  </script>
 </body>
 
 </html>

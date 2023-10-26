@@ -11,4 +11,5 @@
     * [AutessaScript](autobot/inner/autessa_script.md)
     * [Generating Bot Component](autobot/inner/bot_component.md)
     * [Integrating Component onto App](autobot/inner/html_snippet.md)
+    * [Viewing History](autobot/inner/history.md)
     * [Pricing](autobot/inner/pricing.md)
