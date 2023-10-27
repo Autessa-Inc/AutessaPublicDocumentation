@@ -16,4 +16,6 @@ We designed pay per request for the bot component to be cheaper than charging pe
 ## Why Monthly Quota?
 We currently only offer this when paying to export the model API. The benefit of the monthly quota is that when you are near the limit for the quota, you get around a 20% discount. The downside with monthly quota is that if you exceed your quota, the API will be unavailable until you increase to the next tier. Autessa will notify you when you are nearing your quota. 
 
+> :bulb: If you choose to decrease your tier partway through the billing cycle, Autobot may choose to honor it if you were under 90% usage for the higher tier.
+
 We recommend using monthly quota after you have used the "Pay Per Request" plan and have an understanding of how much you use your products in a month. 

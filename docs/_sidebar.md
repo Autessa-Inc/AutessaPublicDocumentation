@@ -6,7 +6,7 @@
 * [Autobot](autobot/landing.md)
     * [Getting Started](autobot/inner/getting_started.md)
     * [Creating Intent Model](autobot/inner/intent_model.md)
-    * [Using model API](autobot/inner/api_export.md)
+    * [Using Model API](autobot/inner/api_export.md)
     * [Experience Builder](autobot/inner/experience_builder.md)
     * [AutessaScript](autobot/inner/autessa_script.md)
     * [Generating Bot Component](autobot/inner/bot_component.md)
