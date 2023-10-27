@@ -1,7 +1,6 @@
 <!-- # Autessa Documentation {docsify-ignore-all} -->
-
-<div style="margin:auto;width:50%;padding:10px">
-    <img src="logo/autessa-logo.png" alt="drawing" width="500"/>
+<div class="embimage">
+    <img src="logo/autessa-logo.png"/>
 </div>
 
 # Documentation
@@ -15,22 +14,6 @@ If there are changes you would also just like to make, we do have the documentat
 
 
 <html>
-    <style>
-        .pillar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            flex-wrap: wrap;
-            flex-direction: column;
-            border-radius: 5px;
-            padding: 2rem;
-            margin: 5px;
-            width: 200px;
-            min-width: 150px;
-            text-align: center;
-        }
-    </style>
     <head>
         <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
