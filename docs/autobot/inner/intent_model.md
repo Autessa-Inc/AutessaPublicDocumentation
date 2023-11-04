@@ -9,9 +9,16 @@ An intent model is an natural language understanding (NLU) model to help classif
 ## Design
 Before you start creating a model, you should have an idea of what you want the bot to do. A good place to start is understanding what are the frequent topics that users ask about. For example, if I am running a restaurant, users often call to do the following:
 - Place an order
-- Track their order
+- Make Reservation
 - Understand food allergy practices
 - Get nutrition information
+
+
+<div class="images">
+    <img style="padding:5px;" src="../../assets/autobot/intent_model/add_model.png">
+    <img style="padding:5px;" src="../../assets/autobot/intent_model/makeIntent.png">
+</div>
+
 
 With this as a starting point, I would then create intents for each of these topics so the model can determine what the user was intending to do.
 
@@ -33,25 +40,37 @@ Intent names should typically be one word, we recommend using **camel case** to 
         <div class="container">
             <form id="inputForm">
             <input style="margin-top:10px" type="text" id="inputString" required>
-            <button class="button" style="margin-top:10px;margin-bottom:10px" onClick="updateOutput()">Convert to Camel Case</button>
+            <button class="button" type="button" style="margin-top:10px;margin-bottom:10px" onClick="updateOutput()">Convert to Camel Case</button>
             </form>
-            <p style="display:inline" id="output"></p></p>
+            <p style="display:inline" id="output">&nbsp;</p>
         </div>  
     </body>
 </html>
-
-Create a detailed description for the intent - this way you'll be able to understand what it does when you come back to it later :)
 
 ### Rename Intent
 If, after creating the intent, you want to change the name, click the pencil button in the intent view. Then you will be able to change the intent name to whatever you want.
 
 > :bulb: Remember, all intent names should be unique!
 
+To generate example sentences, see [Adding Data](#adding-data)
+
+<div class="images">
+    <img src="../../assets/autobot/intent_model/defined_intents.png">
+</div>
+
 ## Training
 When you click "Train", Autobot launches a powerful training cluster of models - a transformer-based similarity model, a transformer-based classification model, and a transformer-based generative model. After completing the training for these custom models designed for you (within minutes!), we create an arbitration solution, so when you make a prediction, it provides the best possible prediction for you. 
 
+<div class="images">
+    <img src="../../assets/autobot/intent_model/actions_menu.png">
+</div>
+
 ### Adding Data
 When generating training data for your model, be sure to include a variety of different sentence structures and words. Although you only need ~10 samples to define an intent, adding more samples only helps the model better understand what you mean. Autobot will not train if you provide less than 5 samples. 
+
+<div class="images">
+    <img src="../../assets/autobot/intent_model/samples.png">
+</div>
 
 > :bulb: Before training, be sure to **save** your model - the model trains based on your last saved changes.
 
@@ -59,6 +78,10 @@ To train, just click the train button, located in the **actions** menu in the up
 
 ## Testing
 Once training is completed, your model will be unlocked, and you'll be ready to test! To test, just click the "test" button, located in the **actions** menu. A window will pop up with space for you to provide some samples that the user might say. For each prediction, you will see the intents that were detected for that sentence. 
+
+<div class="images">
+    <img src="../../assets/autobot/intent_model/test_view.png">
+</div>
 
 If you are not happy with the performance, adjust the training samples provided to improve performance. If you would like help with strategies to build a model for your use case, drop us a line! We're always happy to help. 
 

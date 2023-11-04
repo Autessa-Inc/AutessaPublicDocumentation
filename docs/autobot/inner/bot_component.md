@@ -7,7 +7,9 @@ In order to use this feature, you will need to have valid <a href="#/basics/inne
 
 To access this page, head over the Experiences tab on the sidebar of Autobot. Then, navigate to the published experiences by clicking on the published tab. Afterwards, click on the export button next to the experience you want to export. 
 
->IMAGE
+<div class="images">
+    <img src="../../assets/autobot/component/export_experience.png">
+</div>
 
 ## Supported Customization
 Before using the bot, you may want to change the theme of the bot to match your website, rather than Autessa's default branding :) You can do this in the dashboard for customizing your experience. 
@@ -28,6 +30,10 @@ Before a bot renders, it starts as a little circle that a user will have to clic
 
 ## Test Rendering
 To test the rendering within the Autessa sandbox, press the **Test** button in the upper right corner of the application. 
+
+<div class="images">
+    <img src="../../assets/autobot/component/customize.png">
+</div>
 
 ## Extracting Script
 Now that you've customized your bot, the only thing you have to do is copy this snippet anywhere you want to use it!

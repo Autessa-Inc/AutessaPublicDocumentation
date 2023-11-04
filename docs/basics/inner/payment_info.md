@@ -15,6 +15,10 @@ In order to add a new card:
 3. Click "Add Card" in the header
 4. Fill out the necessary information and hit save
 
+<div class="images">
+    <img src="../../assets/basics/add_card.png">
+</div>
+
 *Trouble saving your card information? Feel free to reach out with the bot in the lower left on suite to contact support, or through our contact us page or bot in the lower right!*
 
 ### Marking Card as Default
