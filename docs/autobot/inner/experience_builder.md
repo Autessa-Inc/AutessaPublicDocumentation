@@ -19,6 +19,10 @@ The below diagram gives an idea of the behind the scenes workflow that happens w
 ## Importing Models
 To create a new experience, head to the "Experiences" tab and press the "New Experience" button. For a new experience, specify a name and a description to describe what your experience is used for. Then select the models you want associated with the experience.
 
+<div class="images" style="width:70%">
+    <img style="max-width:100%" src="../../assets/autobot/experience/import_model.png">
+</div>
+
 > :bulb: You can only import published models!
 
 After submitting the form for a new experience, you will see intents already loaded into the experience with default plain text actions. 
@@ -36,9 +40,21 @@ The buttons will contain a "human readable" version of the intent that you defin
 ### Testing
 Testing is available for your experience as soon as you hit **save** in the actions menu.
 
->>>>> NEEDS IMAGES
-
 The experience builder has two testing flows - one when you are in the full experience view (seeing all the possible intents), and one when you are in the specific action definition. If you test from outside the view, you will be prompted to type in a user sentence and wait for the prediction, but if you are in the specific action definiton, the test window will simply have a button for "Generate Output" and you can see how the action would be rendered.
+
+<div style="display: flex;">
+    <div style="flex: 1; padding: 10px; text-align: center;">
+        <h3 style="margin: 0;">Testing Within Intent</h3>
+        <img src="../../assets/autobot/experience/test_inside_intent.png" style="max-width: 100%;">
+    </div>
+    <div style="flex: 1; padding: 10px; text-align: center;">
+        <h3 style="margin: 0;">Testing Outside of Intent</h3>
+        <img src="../../assets/autobot/experience/test_outside_intents.png" style="max-width: 100%;">
+    </div>
+</div>
+
+When testing *outside* of an intent, you will be able to test fallback flows, disambiguation flows, and the "what can I do" flow.
+
 
 ## Experience Types
 Autobot offers numerous experience types to help define custom bot actions. 
@@ -47,6 +63,10 @@ Autobot offers numerous experience types to help define custom bot actions.
 
 ### Plain Text
 The most basic response to provide - this is when there's a clear message you want to give the user that's well-defined for their question. For example, when a user asks "How are you?", you may want the bot to always response with "Good, how can I help you today?"
+
+<div class="images">
+    <img src="../../assets/autobot/experience/plain_text.png">
+</div>
 
 ### Variable Response
 Variable response is when you want some more variety in the plain text response. Rather than just providing a single plain text response, you can provide a list of plain text responses, and the bot will choose one response at random. 
@@ -58,8 +78,23 @@ For example, if a user responds with "How are you?", I could define the variable
 
 And then the bot would pick one of the above responses to provide the user.
 
+<div style="display: flex;">
+    <div style="flex: 1; padding: 10px; text-align: center;">
+        <img src="../../assets/autobot/experience/variable_response.png" style="max-width: 100%;height:300px;">
+    </div>
+    <div style="flex: 1; padding: 10px; text-align: center;">
+        <img src="../../assets/autobot/experience/var_response_test.png" style="max-width: 100%;height:300px;object-fit: cover">
+    </div>
+</div>
+
 ### Embeddable Media
 Embeddable media is a powerful tool that Autobot provides. Simply provide a link and generate the output in the test to see how it will render. 
+
+<div class="images">
+    <img style="flex:1;width:40%" src="../../assets/autobot/experience/embed_media_test.png">
+    <img style="flex:1;width:40%" src="../../assets/autobot/experience/opentable.png">
+</div>
+
 
 For the media, you can provide any URL, and autobot will check the following logic:
 
@@ -89,14 +124,26 @@ For example, if a user was asking about food allergies, we may want different fl
 * Peanut allergies
 * Something else
 
->>>>> IMAGE
+
+<div style="display: flex;">
+    <div style="flex: 1; padding: 10px; text-align: center;">
+        <img src="../../assets/autobot/experience/list_output_def.png" style="max-width: 100%;height:300px;">
+    </div>
+    <div style="flex: 1; padding: 10px; text-align: center;">
+        <img src="../../assets/autobot/experience/plain_test_list.png" style="max-width: 100%;height:300px;object-fit: cover">
+    </div>
+</div>
 
 In the builder, you can use the "Link Block" feature to generate a new action to take place when the user hits the button. So our bot may look something like
-* Gluten-free menu => Embedable Media link to gluten-free menu
+* Gluten-free menu => Embeddable Media link to gluten-free menu
 * Peanut allergies => Plain Text: We are a peanut free kitchen
 * Something else => HTML: Call a phone number `<a href="tel:+1234567890">Call Us</a>`
 
 List responses are great when you want to guide the user through a specific flow. 
+
+<div class="images">
+    <img style="height:400px" src="../../assets/autobot/experience/list_output_test.png">
+</div>
 
 ### Gen AI
 We recommend using the generative AI response to generate experiences for a user to have human like responses to tickets that may occur that you may not have an answer for. Another fun application of the generative AI model is providing an entertaining character bot - for example, a bot can respond like Rapunzel if you provide a prompt saying "Respond to the user as if you were Rapunzel from Tangled."! 
@@ -187,6 +234,10 @@ You are then offered two prompt definitions to help guide the user to give addit
 
 **Prompt for User Email** The user response to this question will be the email you can contact them back at. A good prompt would be something like "What is a good email to reach you?"
 
+<div class="images">
+    <img src="../../assets/autobot/experience/fallback_email.png">
+</div>
+
 ## Add a "What Can I Do" Intent
 Sometimes, it is helpful for a bot to provide some random capabilities when a user asks questions similar to "what can you do?" To add this intent and action flow to your experience, click the **Include "What Can I do?"** checkbox. We made this intent very **precise** - this means that the sentence would need to be very similar to one of the trained samples for this to trigger.
 
@@ -231,6 +282,10 @@ The WhatCanYouDo intent contains the following samples:
 * "What can you do"
 * "What can I ask you"
 * "help"
+
+<div class="images">
+    <img src="../../assets/autobot/experience/whatCanIDo.png">
+</div>
 
 
 ## FAQs

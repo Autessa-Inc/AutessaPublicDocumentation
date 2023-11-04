@@ -5,7 +5,7 @@ All requests made through the paid features in Autobot are tracked and available
 **Utterance**: The input sentence from the user 
 
 
-## For the Bot (NEEDS IMAGES)
+## For the Bot
 In the history tab for the Autobot dashboard, click the "Bot Experience" tab. In this, you will see all the utterances that have been passed through your bot in order of most recent. Every utterance has an associated **utterance id**, this is a unique ID representing the sentence that the user typed into the bot. Every user session is contained in a **conversation id**. To see the historical conversation up until the point the user typed the utterance in question, click the **historical conversation** icon.
 
 Is there more information you'd like to see in the history table that's not currently supported, [let us know](https://autessa.com/contact-us)! 

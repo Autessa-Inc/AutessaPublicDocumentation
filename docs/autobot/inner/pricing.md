@@ -19,3 +19,11 @@ We currently only offer this when paying to export the model API. The benefit of
 > :bulb: If you choose to decrease your tier partway through the billing cycle, Autobot may choose to honor it if you were under 90% usage for the higher tier.
 
 We recommend using monthly quota after you have used the "Pay Per Request" plan and have an understanding of how much you use your products in a month. 
+
+
+## Autobot Dashboard
+After exporting your products, you will be able to see usage in the Autobot dashboard. 
+
+Sometimes, the current usage shown in the dashboard will be off at the start of a new month if your services don't have usage - but do not worry, you will not be charged for usage you do not have.
+
+If you ever have any questions about your current usage, do not hesitate to [contact-us](https://autessa.com/contact-us).
