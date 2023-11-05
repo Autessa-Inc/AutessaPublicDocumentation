@@ -99,6 +99,25 @@
     }
 
   </style>
+  <script type="text/javascript">
+    function resizeCrossDomainIframe(id) {
+      var iframe = document.getElementById(id);
+          iframe.height = 70 + "px";
+            iframe.width = 70 + "px";
+      window.addEventListener('message', function(event) {
+        var height = parseInt(event.data);
+        if (height === 48) {
+            iframe.height = height + 22 + "px";
+            iframe.width = height + 22 + "px";
+        } else {
+            iframe.height = height + "px";
+            iframe.width = "400px";
+        }
+      }, false);
+    }
+  </script>
+  <iframe id="dbe081cf-759f-4cc0-b557-d41508210f05" src="https://bot.autessa.com/dbe081cf-759f-4cc0-b557-d41508210f05" style="z-index:999;border-radius: 5px;overflow: hidden;border: none;position:fixed;bottom: 0;right: 0;" onload="resizeCrossDomainIframe('dbe081cf-759f-4cc0-b557-d41508210f05');"></iframe>
+
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -163,8 +182,5 @@
         document.getElementById('output').textContent = output;
     }
   </script>
-
-</body>
-
 
 </html>

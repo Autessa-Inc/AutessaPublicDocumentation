@@ -1,8 +1,11 @@
 # Getting Started
 
-## See it in Action
-
-Video embed of bot
+<div style="text-align:center;margin-top:40px">
+    <video style="object-fit:cover;" width="100%" height="100%" oncontextmenu="return false;" controls>
+        <source src="https://autessa-public-bucket.s3.us-west-2.amazonaws.com/autobot_internal_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+    </video> 
+</div>
 
 ## Using Autobot for the first time
 When starting with Autobot, we recommend first creating an intent model. In your intent model, you will define some intents, or actions, that a user may want to do when interacting with your bot, along with some sample sentences that a user might say. After training and testing your model, you can publish the model. This model is now yours to use as an [API](autobot/inner/api_export.md) or in an [experience](autobot/inner/experience_builder.md) (or both!).

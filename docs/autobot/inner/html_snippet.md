@@ -20,4 +20,4 @@ To add an embed in Wix, you will need to add a [custom HTML element](https://sup
 ## GitHub Pages
 In GitHub pages, simply update your `index.html` to contain the bot. To have the bot appear on every page, we recommend adding it to the `<head>` section on your index.html.
 
-For example, in our documentation, we added it [here](https://github.com/Autessa-Inc/AutessaPublicDocumentation/blob/main/docs/index.html#L94) 
+For example, in our documentation, we added it [here](https://github.com/Autessa-Inc/AutessaPublicDocumentation/blob/6f2fe4d821d8587283600915d727abe377a85b47/docs/index.html#L102) 
