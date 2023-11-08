@@ -102,11 +102,11 @@
   <script type="text/javascript">
     function resizeCrossDomainIframe(id) {
       var iframe = document.getElementById(id);
-          iframe.height = 70 + "px";
-            iframe.width = 70 + "px";
+          iframe.height = 95 + "px";
+            iframe.width = 95 + "px";
       window.addEventListener('message', function(event) {
         var height = parseInt(event.data);
-        if (height === 48) {
+        if (height === 73) {
             iframe.height = height + 22 + "px";
             iframe.width = height + 22 + "px";
         } else {
