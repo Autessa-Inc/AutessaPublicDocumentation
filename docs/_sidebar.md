@@ -9,6 +9,7 @@
     * [Using Model API](autobot/inner/api_export.md)
     * [Experience Builder](autobot/inner/experience_builder.md)
     * [AutessaScript](autobot/inner/autessa_script2.md)
+    * [AutessaDB](autobot/inner/autessadb.md)
     * [Generating Bot Component](autobot/inner/bot_component.md)
     * [Integrating Component onto App](autobot/inner/html_snippet.md)
     * [Viewing History](autobot/inner/history.md)
