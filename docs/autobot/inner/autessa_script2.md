@@ -147,6 +147,29 @@ apiResponse = mailer.sendEmail(JSON.stringify({
 Logger.log(apiResponse)
 ```
 
+### Extract HTML
+Sometimes you just want to call a webpage and extract the HTML from it. If your tool takes in the argument "url", you can extract HTML like this. This will also clean up the css styletags to make the context a little shorter. Feel free to adapt for your usecase.
+```javascript
+function execute() {
+  const url = String(variables.getVariable('url'));
+  const response = api.get(JSON.stringify(
+    {
+        "endpoint": url,
+    }
+  ));
+  const parsed = JSON.parse(response);
+  const html = parsed['response'];
+  var cleaned = html.replace(/<style[\s\S]*?<\/style>/gi, '');
+  // Remove <link rel="stylesheet" ...> tags
+  cleaned = cleaned.replace(/<link[^>]*rel=["']?stylesheet["']?[^>]*>/gi, '');
+    // Optionally: Remove inline style="..." attributes
+  cleaned = cleaned.replace(/\s*style="[^"]*"/gi, '');
+  return cleaned;
+}
+
+response.setResponse(execute());
+```
+
 
 ### Calling Built-In LLM
 While you can use API calls to call external LLMs, we also support accessing our built-in LLM with ease.
